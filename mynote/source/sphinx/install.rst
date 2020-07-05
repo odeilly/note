@@ -56,6 +56,30 @@ https://www.python.org/downloads/
 Sphinxのインストール
 ====================
 
+
+インストール
+------------
+
+コマンドプロンプトを起動し, 以下のコマンドを実行します.
+
+::
+
+   C:\>pip install sphinx Pillow
+
+
+動作確認
+--------
+
+コマンドプロンプトを起動し, 以下のコマンドを実行し,
+バージョンが表示されればインストール成功です.
+
+::
+
+   C:\>sphinx-quickstart --version
+   sphinx-quickstart 3.1.1
+
+
+
 Make of Windowsのインストール
 =============================
 
