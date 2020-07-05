@@ -18,7 +18,7 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'My Note'
+project = 'Odeilly\'s Note'
 copyright = '2020, Odeilly'
 author = 'Odeilly'
 
