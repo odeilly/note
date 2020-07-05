@@ -8,6 +8,9 @@ Sphinxでは, 10個の組み込みテーマがあります.
 サードパーティ製のテーマの1つである,
 bootstrapのテーマをインストールします.
 
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+
 テーマのインストール
 ====================
 
@@ -15,7 +18,7 @@ bootstrapのテーマをインストールします.
 
 ::
 
-   C:\>pip install shpinx_bootstrap_theme
+   C:\>pip install sphinx_bootstrap_theme
 
 bootstrapテーマを適用する
 =========================
