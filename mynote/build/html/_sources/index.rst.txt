@@ -10,20 +10,41 @@ Sphinx
 
 Pythonのインストール
 ~~~~~~~~~~~~~~~~~~~~
-1. インストーラをダウンロードします.
-   https://www.python.org/downloads/
+
+ダウンロード
+++++++++++++
+
+
+下記ページから, インストーラをダウンロードします.
+https://www.python.org/downloads/
    
 
-2. インストーラを起動します.
+インストール
+++++++++++++
 
-3. 「Add Python 3.8 to PATH」にチェックを入れます.
+1. インストーラを起動します.
 
-4. 「Install Now」をクリックします.
+2. 「Add Python 3.8 to PATH」にチェックを入れます.
 
-5. 「Disable path length limit」をクリックします.
+3. 「Install Now」をクリックします.
 
-6. 「Close」をクリックし, インストーラを閉じます.
+4. 「Disable path length limit」をクリックします.
+
+5. 「Close」をクリックし, インストーラを閉じます.
+
+
+動作確認
+++++++++
+
+コマンドプロンプトを起動し, ``python -V`` を実行し,
+バージョンが表示されればインストール成功です.
+
+::
    
+   C:\>python -V
+   Python 3.8.3
+
+
 
 Sphinxのインストール
 ~~~~~~~~~~~~~~~~~~~~
