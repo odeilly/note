@@ -120,7 +120,6 @@ http://gnuwin32.sourceforge.net/packages/make.htm
    商業性や特定の目的への適合性の如何に関わらず, 無保証です.
 
 
-
 TeX Liveのインストール
 ======================
 
@@ -128,10 +127,39 @@ TeX Liveのインストール
 ダウンロード
 ------------
 
+下記ページから, インストーラをダウンロードします.
+
+http://www.tug.org/texlive/acquire-netinstall.html
+
+.. figure:: images/install/texlive-download.png
+
 
 インストール
 ------------
 
+インストーラを起動し, デフォルト設定のままインストールします.
+ただし, TeXworksは特に利用しないので,
+不要の場合はチェックを外して下さい.
+
+.. figure:: images/install/texlive-texworks.png
+            
 
 動作確認
 --------
+
+コマンドプロンプトを開き, 以下のコマンドでバージョンが表示されれば,
+インストール成功です.
+
+::
+
+   C:\>platex -version
+   e-pTeX 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX)
+   kpathsea version 6.3.2
+   ptexenc version 1.3.8
+   Copyright 2020 D.E. Knuth.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the e-pTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the e-pTeX source.
+   Primary author of e-pTeX: Peter Breitenlohner.
