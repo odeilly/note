@@ -5,3 +5,4 @@
 .. toctree::
 
    install
+   theme
