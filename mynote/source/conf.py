@@ -56,6 +56,11 @@ exclude_patterns = []
 # Activate the theme.                                          
 html_theme = 'bootstrap'                                       
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+html_theme_options = {
+    'bootswatch_theme': "cerulean",
+    'source_link_position': "footer",
+}
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
