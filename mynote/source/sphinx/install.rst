@@ -47,7 +47,7 @@ https://www.python.org/downloads/
 コマンドプロンプトを起動し, 以下のコマンドを実行し,
 バージョンが表示されればインストール成功です.
 
-::
+.. code-block:: none
    
    C:\>python -V
    Python 3.8.3
@@ -63,7 +63,7 @@ Sphinxのインストール
 
 コマンドプロンプトを起動し, 以下のコマンドを実行します.
 
-::
+.. code-block:: none
 
    C:\>pip install sphinx Pillow
 
@@ -74,7 +74,7 @@ Sphinxのインストール
 コマンドプロンプトを起動し, 以下のコマンドを実行し,
 バージョンが表示されればインストール成功です.
 
-::
+.. code-block:: none
 
    C:\>sphinx-quickstart --version
    sphinx-quickstart 3.1.1
@@ -110,7 +110,7 @@ http://gnuwin32.sourceforge.net/packages/make.htm
 コマンドプロンプトを起動し, 以下のコマンドを実行し,
 バージョンが表示されればインストール成功です.
 
-::
+.. code-block:: none
 
    C:\>make -version
    GNU Make 3.81
@@ -150,7 +150,7 @@ http://www.tug.org/texlive/acquire-netinstall.html
 コマンドプロンプトを起動し, 以下のコマンドを実行し,
 バージョンが表示されればインストール成功です.
 
-::
+.. code-block:: none
 
    C:\>platex -version
    e-pTeX 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX)

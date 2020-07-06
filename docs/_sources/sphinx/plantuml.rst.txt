@@ -36,7 +36,7 @@ sphinxcontrib-plantumlのインストール
 
 コマンドプロンプトを開き, 下記のコマンドを実行します.
 
-::
+.. code-block:: none
 
    C:\>easy_install sphinxcontrib-plantuml
 
@@ -46,7 +46,7 @@ conf.pyの編集
 
 extensions に sphinxcontrib.plantuml を追加します.
 
-::
+.. code-block:: python
    
    extensions = [
    
@@ -60,14 +60,14 @@ extensions に sphinxcontrib.plantuml を追加します.
 
 plantuml コマンドを設定します.
 
-::
+.. code-block:: python
 
    plantuml = 'java -jar /PlantUML/plantuml.jar'
 
 作成例
 ======
 
-::
+.. code-block:: rst
 
    .. uml::
 
