@@ -71,9 +71,11 @@
 <li><a class="reference internal" href="#id1">PlantUMLの配置</a><ul>
 <li><a class="reference internal" href="#id2">ダウンロード</a></li>
 <li><a class="reference internal" href="#id3">配置</a></li>
+<li><a class="reference internal" href="#sphinxcontrib-plantuml">sphinxcontrib-plantumlのインストール</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#conf-py">conf.py</a></li>
+<li><a class="reference internal" href="#conf-py">conf.pyの編集</a></li>
+<li><a class="reference internal" href="#id4">作成例</a></li>
 </ul>
 </li>
 </ul>
@@ -132,14 +134,50 @@
 <div class="section" id="id3">
 <h3>配置<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ol class="arabic simple">
-<li><p>Javaをインストールし, システム環境変数Pathを編集し, <code class="docutils literal notranslate"><span class="pre">java</span></code> コマンドが使えるようにしておきます.</p></li>
-<li><p>上記でダウンロードしたファイルを任意のフォルダに配置します.
+<li><p>上記でダウンロードしたファイル plantuml.jar を任意のフォルダに配置します.
 本ドキュメントでは, <code class="docutils literal notranslate"><span class="pre">C:\PlantUML</span></code> というフォルダに配置するとします.</p></li>
+<li><p>Javaをインストールし, システム環境変数Pathを編集し, <code class="docutils literal notranslate"><span class="pre">java</span></code> コマンドが使えるようにしておきます.</p></li>
 </ol>
+</div>
+<div class="section" id="sphinxcontrib-plantuml">
+<h3>sphinxcontrib-plantumlのインストール<a class="headerlink" href="#sphinxcontrib-plantuml" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>コマンドプロンプトを開き, 下記のコマンドを実行します.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="o">&gt;</span><span class="n">easy_install</span> <span class="n">sphinxcontrib</span><span class="o">-</span><span class="n">plantuml</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="conf-py">
-<h2>conf.py<a class="headerlink" href="#conf-py" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>conf.pyの編集<a class="headerlink" href="#conf-py" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>extensions に sphinxcontrib.plantuml を追加します.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+
+    <span class="o">...</span>
+
+    <span class="s1">&#39;sphinxcontrib.plantuml&#39;</span><span class="p">,</span>
+
+    <span class="o">...</span>
+
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>plantuml コマンドを設定します.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plantuml</span> <span class="o">=</span> <span class="s1">&#39;java -jar /PlantUML/plantuml.jar&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>作成例<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. uml::
+
+   Alice -&gt; Bob: Hi!
+   Alice &lt;- Bob: How are you?
+</pre></div>
+</div>
+<p class="plantuml">
+<img src="../_images/plantuml-04eff74a867ed6e006b81ee614dc69ae815ef9e5.png" alt="Alice -&gt; Bob: Hi!
+Alice &lt;- Bob: How are you?"/>
+</p>
 </div>
 </div>
 

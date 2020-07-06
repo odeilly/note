@@ -27,9 +27,9 @@ PlantUMLは, 下記ページからダウンロードします.
 配置
 ----
 
-1. Javaをインストールし, システム環境変数Pathを編集し, ``java`` コマンドが使えるようにしておきます.
-2. 上記でダウンロードしたファイルを任意のフォルダに配置します.
+1. 上記でダウンロードしたファイル plantuml.jar を任意のフォルダに配置します.
    本ドキュメントでは, ``C:\PlantUML`` というフォルダに配置するとします.
+2. Javaをインストールし, システム環境変数Pathを編集し, ``java`` コマンドが使えるようにしておきます.
 
 sphinxcontrib-plantumlのインストール
 ------------------------------------
@@ -41,6 +41,41 @@ sphinxcontrib-plantumlのインストール
    C:\>easy_install sphinxcontrib-plantuml
 
    
-conf.py
-=======
+conf.pyの編集
+=============
 
+extensions に sphinxcontrib.plantuml を追加します.
+
+::
+   
+   extensions = [
+   
+       ...
+       
+       'sphinxcontrib.plantuml',
+       
+       ...
+       
+   ]
+
+plantuml コマンドを設定します.
+
+::
+
+   plantuml = 'java -jar /PlantUML/plantuml.jar'
+
+作成例
+======
+
+::
+
+   .. uml::
+
+      Alice -> Bob: Hi!
+      Alice <- Bob: How are you?
+
+
+.. uml::
+
+   Alice -> Bob: Hi!
+   Alice <- Bob: How are you?
