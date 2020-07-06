@@ -6,3 +6,4 @@
 
    install
    theme
+   plantuml
