@@ -64,6 +64,11 @@ exclude_patterns = []
 
 # Activate the theme.                                          
 html_theme = 'basicstrap'
+html_theme_options = {
+    'lang': 'ja',
+    'inner_theme': True,
+    'inner_theme_name': 'bootswatch-cerulean',
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
