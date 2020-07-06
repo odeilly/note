@@ -10,7 +10,7 @@ Sphinx Theme for Basicstrap を利用する
 
 https://pythonhosted.org/sphinxjp.themes.basicstrap/index.html
 
-ダウンロード
+インストール
 ------------
 
 コマンドプロンプトで, 下記を実行します.
@@ -45,7 +45,7 @@ Sphinx Bootstrap Themeを利用する
 
 https://github.com/ryan-roemer/sphinx-bootstrap-theme
 
-ダウンロード
+インストール
 ------------
 
 コマンドプロンプトで, 下記を実行します.
@@ -75,7 +75,7 @@ Read the Docs テーマを利用する
 
 https://sphinx-rtd-theme.readthedocs.io/en/stable/
 
-ダウンロード
+インストール
 ------------
 
 コマンドプロンプトで, 下記を実行します.
@@ -112,7 +112,7 @@ Bootstrap v4 HTML Theme for Sphinx を利用する
 
 https://github.com/myyasuda/sphinxbootstrap4theme
 
-ダウンロード
+インストール
 ------------
 
 コマンドプロンプトで, 下記を実行します.
