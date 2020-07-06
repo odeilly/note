@@ -5,9 +5,43 @@
 Sphinxでは, 10個の組み込みテーマがあります.
 また, サードパーティ製のテーマを利用することもできます.
 
+Sphinx Theme for Basicstrap を利用する
+======================================
 
-bootstrapテーマを利用する
-=========================
+https://pythonhosted.org/sphinxjp.themes.basicstrap/index.html
+
+ダウンロード
+------------
+
+コマンドプロンプトで, 下記を実行します.
+
+::
+
+   C:\>pip install sphinxjp.themes.basicstrap
+
+   
+適用
+----
+
+conf.py に, 以下を追加します.
+
+.. code-block:: python
+
+   extensions = [
+
+       ...
+
+       'sphinxjp.themes.basicstrap',
+
+       ...
+       
+   ]
+
+   html_theme = 'basicstrap'
+
+
+Sphinx Bootstrap Themeを利用する
+================================
 
 https://github.com/ryan-roemer/sphinx-bootstrap-theme
 
