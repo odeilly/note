@@ -70,8 +70,16 @@
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">1.2. テーマ</a><ul>
-<li><a class="reference internal" href="#id2">1.2.1. テーマのインストール</a></li>
-<li><a class="reference internal" href="#bootstrap">1.2.2. bootstrapテーマを適用する</a></li>
+<li><a class="reference internal" href="#bootstrap">1.2.1. bootstrapテーマを利用する</a><ul>
+<li><a class="reference internal" href="#id2">1.2.1.1. ダウンロード</a></li>
+<li><a class="reference internal" href="#id3">1.2.1.2. 適用</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#read-the-docs">1.2.2. Read the Docs テーマを利用する</a><ul>
+<li><a class="reference internal" href="#id4">1.2.2.1. ダウンロード</a></li>
+<li><a class="reference internal" href="#id5">1.2.2.2. 適用</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -119,18 +127,18 @@
 <h1><span class="section-number">1.2. </span>テーマ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>Sphinxでは, 10個の組み込みテーマがあります.
 また, サードパーティ製のテーマを利用することもできます.</p>
-<p>サードパーティ製のテーマの1つである,
-bootstrapのテーマをインストールします.</p>
+<div class="section" id="bootstrap">
+<h2><span class="section-number">1.2.1. </span>bootstrapテーマを利用する<a class="headerlink" href="#bootstrap" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><a class="reference external" href="https://github.com/ryan-roemer/sphinx-bootstrap-theme">https://github.com/ryan-roemer/sphinx-bootstrap-theme</a></p>
 <div class="section" id="id2">
-<h2><span class="section-number">1.2.1. </span>テーマのインストール<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h3><span class="section-number">1.2.1.1. </span>ダウンロード<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>コマンドプロンプトで, 下記を実行します.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\&gt;pip install sphinx_bootstrap_theme
 </pre></div>
 </div>
 </div>
-<div class="section" id="bootstrap">
-<h2><span class="section-number">1.2.2. </span>bootstrapテーマを適用する<a class="headerlink" href="#bootstrap" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id3">
+<h3><span class="section-number">1.2.1.2. </span>適用<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>conf.py に, 以下を追加します.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># At the top.</span>
 <span class="kn">import</span> <span class="nn">sphinx_bootstrap_theme</span>
@@ -141,6 +149,37 @@ bootstrapのテーマをインストールします.</p>
 <span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;bootstrap&#39;</span>
 <span class="n">html_theme_path</span> <span class="o">=</span> <span class="n">sphinx_bootstrap_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="read-the-docs">
+<h2><span class="section-number">1.2.2. </span>Read the Docs テーマを利用する<a class="headerlink" href="#read-the-docs" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://sphinx-rtd-theme.readthedocs.io/en/stable/">https://sphinx-rtd-theme.readthedocs.io/en/stable/</a></p>
+<div class="section" id="id4">
+<h3><span class="section-number">1.2.2.1. </span>ダウンロード<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>コマンドプロンプトで, 下記を実行します.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install sphinx-rtd-theme
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h3><span class="section-number">1.2.2.2. </span>適用<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>conf.py に, 以下を追加します.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+
+    <span class="o">...</span>
+
+    <span class="s1">&#39;sphinx_rtd_theme&#39;</span><span class="p">,</span>
+
+    <span class="o">...</span>
+
+<span class="p">]</span>
+
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
