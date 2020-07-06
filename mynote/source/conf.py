@@ -75,3 +75,4 @@ html_theme_options = {
 html_static_path = ['_static']
 
 html_show_sphinx = False
+highlight_language = 'none'
