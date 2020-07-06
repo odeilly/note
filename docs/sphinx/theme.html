@@ -80,6 +80,11 @@
 <li><a class="reference internal" href="#id5">1.2.2.2. 適用</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#bootstrap-v4-html-theme-for-sphinx">1.2.3. Bootstrap v4 HTML Theme for Sphinx を利用する</a><ul>
+<li><a class="reference internal" href="#id6">1.2.3.1. ダウンロード</a></li>
+<li><a class="reference internal" href="#id7">1.2.3.2. 適用</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -178,6 +183,26 @@
 <span class="p">]</span>
 
 <span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="bootstrap-v4-html-theme-for-sphinx">
+<h2><span class="section-number">1.2.3. </span>Bootstrap v4 HTML Theme for Sphinx を利用する<a class="headerlink" href="#bootstrap-v4-html-theme-for-sphinx" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://github.com/myyasuda/sphinxbootstrap4theme">https://github.com/myyasuda/sphinxbootstrap4theme</a></p>
+<div class="section" id="id6">
+<h3><span class="section-number">1.2.3.1. </span>ダウンロード<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>コマンドプロンプトで, 下記を実行します.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install sphinxbootstrap4theme
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3><span class="section-number">1.2.3.2. </span>適用<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sphinxbootstrap4theme</span>
+
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinxbootstrap4theme&#39;</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinxbootstrap4theme</span><span class="o">.</span><span class="n">get_path</span><span class="p">()]</span>
 </pre></div>
 </div>
 </div>

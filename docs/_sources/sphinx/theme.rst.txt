@@ -71,3 +71,29 @@ conf.py に, 以下を追加します.
    ]
 
    html_theme = 'sphinx_rtd_theme'
+
+   
+Bootstrap v4 HTML Theme for Sphinx を利用する
+=============================================
+
+https://github.com/myyasuda/sphinxbootstrap4theme
+
+ダウンロード
+------------
+
+コマンドプロンプトで, 下記を実行します.
+
+::
+
+   pip install sphinxbootstrap4theme
+
+適用
+----
+
+.. code-block:: python
+
+   import sphinxbootstrap4theme
+
+   html_theme = 'sphinxbootstrap4theme'
+   html_theme_path = [sphinxbootstrap4theme.get_path()]
+   
