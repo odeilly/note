@@ -5,14 +5,14 @@
 Sphinxでは, 10個の組み込みテーマがあります.
 また, サードパーティ製のテーマを利用することもできます.
 
-サードパーティ製のテーマの1つである,
-bootstrapのテーマをインストールします.
+
+bootstrapテーマを利用する
+=========================
 
 https://github.com/ryan-roemer/sphinx-bootstrap-theme
 
-
-テーマのインストール
-====================
+ダウンロード
+------------
 
 コマンドプロンプトで, 下記を実行します.
 
@@ -20,8 +20,8 @@ https://github.com/ryan-roemer/sphinx-bootstrap-theme
 
    C:\>pip install sphinx_bootstrap_theme
 
-bootstrapテーマを適用する
-=========================
+適用
+----
 
 conf.py に, 以下を追加します.
 
@@ -36,3 +36,38 @@ conf.py に, 以下を追加します.
    html_theme = 'bootstrap'
    html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
    
+Read the Docs テーマを利用する
+==============================
+
+https://sphinx-rtd-theme.readthedocs.io/en/stable/
+
+ダウンロード
+------------
+
+コマンドプロンプトで, 下記を実行します.
+
+::
+
+   pip install sphinx-rtd-theme
+   
+
+適用
+----
+
+conf.py に, 以下を追加します.
+
+.. code-block:: python
+
+   import sphinx_rtd_theme
+
+   extensions = [
+
+       ...
+
+       'sphinx_rtd_theme',
+
+       ...
+
+   ]
+
+   html_theme = 'sphinx_rtd_theme'
