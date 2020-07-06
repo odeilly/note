@@ -17,7 +17,7 @@ https://pythonhosted.org/sphinxjp.themes.basicstrap/index.html
 
 ::
 
-   C:\>pip install sphinxjp.themes.basicstrap
+   pip install sphinxjp.themes.basicstrap
 
    
 適用
@@ -39,6 +39,11 @@ conf.py に, 以下を追加します.
 
    html_theme = 'basicstrap'
 
+オプション
+----------
+
+
+
 
 Sphinx Bootstrap Themeを利用する
 ================================
@@ -52,7 +57,7 @@ https://github.com/ryan-roemer/sphinx-bootstrap-theme
 
 .. code-block:: none
 
-   C:\>pip install sphinx_bootstrap_theme
+   pip install sphinx_bootstrap_theme
 
 適用
 ----
