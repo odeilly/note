@@ -16,7 +16,7 @@ https://github.com/ryan-roemer/sphinx-bootstrap-theme
 
 コマンドプロンプトで, 下記を実行します.
 
-::
+.. code-block:: none
 
    C:\>pip install sphinx_bootstrap_theme
 
@@ -25,7 +25,7 @@ bootstrapテーマを適用する
 
 conf.py に, 以下を追加します.
 
-::
+.. code-block:: python
 
    # At the top.
    import sphinx_bootstrap_theme
