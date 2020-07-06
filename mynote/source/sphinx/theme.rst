@@ -42,7 +42,9 @@ conf.py に, 以下を追加します.
 オプション
 ----------
 
+テーマオプションは, 下記ページを参照して下さい.
 
+https://pythonhosted.org/sphinxjp.themes.basicstrap/options.html#sample-and-html-theme-options
 
 
 Sphinx Bootstrap Themeを利用する
