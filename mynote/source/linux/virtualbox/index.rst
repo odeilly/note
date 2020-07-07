@@ -9,6 +9,8 @@ https://www.virtualbox.org/
 
 下記, ダウンロードサイトからインストーラをダウンロードします.
 
+https://www.virtualbox.org/wiki/Downloads
+
 .. figure:: images/virtualbox_download.png
 
 
