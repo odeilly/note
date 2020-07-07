@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     
-    <title>2. Sphinx &mdash; Odeilly&#39;s Note  ドキュメント</title>
+    <title>1.1. Plugin &mdash; Odeilly&#39;s Note  ドキュメント</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -51,8 +51,9 @@
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="top" title="Odeilly&#39;s Note  ドキュメント" href="../index.html" />
-    <link rel="next" title="2.1. インストール" href="install.html" />
-    <link rel="prev" title="1.1. Plugin" href="../eclipse/plugin.html" /> 
+    <link rel="up" title="1. Eclipse" href="index.html" />
+    <link rel="next" title="2. Sphinx" href="../sphinx/index.html" />
+    <link rel="prev" title="1. Eclipse" href="index.html" /> 
   </head>
   <body role="document">
     <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
@@ -68,13 +69,26 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">1.1. Plugin</a><ul>
+<li><a class="reference internal" href="#plantuml">1.1.1. PlantUMLプラグイン</a></li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
 
             
-              <li><a href="../eclipse/plugin.html" title="1.1. Plugin" accesskey="P">前へ </a></li>
-              <li><a href="install.html" title="2.1. インストール" accesskey="N">次へ </a></li>
+              <li><a href="index.html" title="1. Eclipse" accesskey="P">前へ </a></li>
+              <li><a href="../sphinx/index.html" title="2. Sphinx" accesskey="N">次へ </a></li>
               <li><a href="../genindex.html" title="総合索引" accesskey="I">索引 </a></li>
+              <li><a href="index.html" accesskey="U"><span class="section-number">1. </span>Eclipse</a></li>
             
-            <li class="visible-xs"><a href="../_sources/sphinx/index.rst.txt" rel="nofollow">ソースコードを表示</a></li>
+            <li class="visible-xs"><a href="../_sources/eclipse/plugin.rst.txt" rel="nofollow">ソースコードを表示</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search.html" method="get">
@@ -106,16 +120,24 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1.1. Plugin</a><ul>
+<li><a class="reference internal" href="#plantuml">1.1.1. PlantUMLプラグイン</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>前のトピックへ</h4>
-  <p class="topless"><a href="../eclipse/plugin.html"
-                        title="前の章へ"><span class="section-number">1.1. </span>Plugin</a></p>
+  <p class="topless"><a href="index.html"
+                        title="前の章へ"><span class="section-number">1. </span>Eclipse</a></p>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="install.html"
-                        title="次の章へ"><span class="section-number">2.1. </span>インストール</a></p>
+  <p class="topless"><a href="../sphinx/index.html"
+                        title="次の章へ"><span class="section-number">2. </span>Sphinx</a></p>
   <div role="note" aria-label="source link">
     <h3>このページ</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/sphinx/index.rst.txt"
+      <li><a href="../_sources/eclipse/plugin.rst.txt"
             rel="nofollow">ソースコードを表示</a></li>
     </ul>
    </div>
@@ -145,32 +167,15 @@
               <div class="bodywrapper">
                 <div class="body">
                   
-  <div class="section" id="sphinx">
-<h1><span class="section-number">2. </span>Sphinx<a class="headerlink" href="#sphinx" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p><a class="reference external" href="https://www.sphinx-doc.org/ja/master/">https://www.sphinx-doc.org/ja/master/</a></p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install.html">2.1. インストール</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install.html#python">2.1.1. Pythonのインストール</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#sphinx">2.1.2. Sphinxのインストール</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#make-of-windows">2.1.3. Make of Windowsのインストール</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#tex-live">2.1.4. TeX Liveのインストール</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="theme.html">2.2. テーマ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="theme.html#sphinx-theme-for-basicstrap">2.2.1. Sphinx Theme for Basicstrap を利用する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="theme.html#sphinx-bootstrap-theme">2.2.2. Sphinx Bootstrap Themeを利用する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="theme.html#read-the-docs">2.2.3. Read the Docs テーマを利用する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="theme.html#bootstrap-v4-html-theme-for-sphinx">2.2.4. Bootstrap v4 HTML Theme for Sphinx を利用する</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="plantuml.html">2.3. PlantUMLを使う</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="plantuml.html#id1">2.3.1. PlantUMLの配置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plantuml.html#conf-py">2.3.2. conf.pyの編集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plantuml.html#id4">2.3.3. 作成例</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="plugin">
+<h1><span class="section-number">1.1. </span>Plugin<a class="headerlink" href="#plugin" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="plantuml">
+<h2><span class="section-number">1.1.1. </span>PlantUMLプラグイン<a class="headerlink" href="#plantuml" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://marketplace.eclipse.org/content/plantuml-plugin">https://marketplace.eclipse.org/content/plantuml-plugin</a></p>
+<p>Marketplace からインストールすることができます.</p>
+<div class="figure align-default">
+<img alt="../_images/plantuml_plugin.png" src="../_images/plantuml_plugin.png" />
+</div>
 </div>
 </div>
 
@@ -193,9 +198,10 @@
     </ul>
 <ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
       
-        <li><a href="../eclipse/plugin.html" title="1.1. Plugin" >前へ</a></li>
-        <li><a href="install.html" title="2.1. インストール" >次へ</a></li>
+        <li><a href="index.html" title="1. Eclipse" >前へ</a></li>
+        <li><a href="../sphinx/index.html" title="2. Sphinx" >次へ</a></li>
         <li><a href="../genindex.html" title="総合索引" >索引</a></li>
+        <li><a href="index.html" ><span class="section-number">1. </span>Eclipse</a></li>
         <li><a href="#">top</a></li> 
       
     </ul>
