@@ -7,7 +7,7 @@ https://www.virtualbox.org/
 ダウンロード
 ============
 
-下記, ダウンロードサイトからインストーラをダウンロードします.
+下記ダウンロードサイトからインストーラをダウンロードします.
 
 https://www.virtualbox.org/wiki/Downloads
 
@@ -16,6 +16,8 @@ https://www.virtualbox.org/wiki/Downloads
 
 インストール
 ============
+
+デフォルト設定のままインストールします.
 
 1. インストーラを起動します.
 
