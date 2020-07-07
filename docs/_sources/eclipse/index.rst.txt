@@ -1,0 +1,7 @@
+=========
+ Eclipse
+=========
+
+.. toctree::
+
+   plugin

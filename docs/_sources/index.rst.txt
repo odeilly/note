@@ -6,4 +6,5 @@
    :maxdepth: 1
    :numbered:
 
+   eclipse/index
    sphinx/index
