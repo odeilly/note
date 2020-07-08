@@ -1,162 +1,154 @@
+
+
 <!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>VirtualBox &mdash; Odeilly&#39;s Note</title>
+  
 
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
 
+  
+  
+  
+  
 
-
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
     
-    <title>VirtualBox &mdash; Odeilly&#39;s Note</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
     
-
-<link rel="stylesheet" href="../../_static/css/basicstrap-base.css" type="text/css" />
-<link rel="stylesheet" id="current-theme" href="../../_static/css/bootstrap3/bootswatch-cerulean.css" type="text/css" />
-<link rel="stylesheet" id="current-adjust-theme" href="../../_static/css/adjust_theme/bootswatch-cerulean.css" type="text/css" />
-
-<link rel="stylesheet" href="../../_static/css/font-awesome.min.css">
-
-<style type="text/css">
-  body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-</style>
-
-<link rel="stylesheet" href="../../_static/css/basicstrap.css" type="text/css" />
-<link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    
-<script type="text/javascript">
-  var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:    '../../',
-            VERSION:     '',
-            COLLAPSE_INDEX: false,
-            FILE_SUFFIX: '.html',
-            HAS_SOURCE:  true
-  };
-</script>
-    <script type="text/javascript" src="../../_static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
-    <script type="text/javascript" src="../../_static/translations.js"></script>
-    <script type="text/javascript" src="../../_static/js/bootstrap3.min.js"></script>
-<script type="text/javascript" src="../../_static/js/jquery.cookie.min.js"></script>
-<script type="text/javascript" src="../../_static/js/basicstrap.js"></script>
-<script type="text/javascript">
-</script>
     <link rel="index" title="索引" href="../../genindex.html" />
-    <link rel="search" title="検索" href="../../search.html" />
-    <link rel="top" title="Odeilly&#39;s Note" href="../../index.html" /> 
-  </head>
-  <body role="document">
-    <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../../index.html">Odeilly&#39;s Note</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown visible-xs">
-                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
-                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
-                <ul>
-<li><a class="reference internal" href="#">VirtualBox</a><ul>
-<li><a class="reference internal" href="#id1">ダウンロード</a></li>
-<li><a class="reference internal" href="#id2">インストール</a></li>
-</ul>
-</li>
-</ul>
+    <link rel="search" title="検索" href="../../search.html" /> 
+</head>
 
-                </ul>
-              </li>
+<body class="wy-body-for-nav">
 
-            
-              <li><a href="../../genindex.html" title="総合索引" accesskey="I">索引 </a></li>
-            
-            <li class="visible-xs"><a href="../../_sources/linux/virtualbox/index.rst.txt" rel="nofollow">ソースコードを表示</a></li>
-
-            <li class="visible-xs">
-                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../../search.html" method="get">
-                  <div class="input-append input-group">
-                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
-                    <span class="input-group-btn">
-                    <input type="submit" class="btn" value="検索" />
-                    </span>
-                  </div>
-                  <input type="hidden" name="check_keywords" value="yes" />
-                  <input type="hidden" name="area" value="default" />
-                </form>
-            </li>
-
-            
-
-          </ul>
-
-        </div>
-      </div>
-    </div>
+   
+  <div class="wy-grid-for-nav">
     
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
 
-    <!-- container -->
-    <div class="container-fluid">
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> Odeilly's Note
+          
 
-      <!-- row -->
-      <div class="row">
-         
-<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
-  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="../../index.html">目次</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">VirtualBox</a><ul>
-<li><a class="reference internal" href="#id1">ダウンロード</a></li>
-<li><a class="reference internal" href="#id2">インストール</a></li>
-</ul>
-</li>
-</ul>
+          
+          </a>
 
-  <div role="note" aria-label="source link">
-    <h3>このページ</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/linux/virtualbox/index.rst.txt"
-            rel="nofollow">ソースコードを表示</a></li>
-    </ul>
-   </div>
-<div id="searchbox" role="search">
-  <h3>クイック検索</h3>
-  <form class="search form-inline" action="../../search.html" method="get">
-      <div class="input-append input-group">
-        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
-        <span class="input-group-btn">
-        <input type="submit" class="btn" value="検索" />
-        </span>
-      </div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
-  </div>
-</div> 
-        
 
-        <div class="col-md-9" id="content-wrapper">
-          <div class="document" role="main">
-            <div class="documentwrapper">
-              <div class="bodywrapper">
-                <div class="body">
-                  
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../eclipse/index.html">Eclipse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sphinx/index.html">Sphinx</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Odeilly's Note</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>VirtualBox</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/linux/virtualbox/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
   <div class="section" id="virtualbox">
 <h1>VirtualBox<a class="headerlink" href="#virtualbox" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p><a class="reference external" href="https://www.virtualbox.org/">https://www.virtualbox.org/</a></p>
@@ -218,40 +210,42 @@
 </div>
 
 
-                </div>
-              </div>
-            </div>
+           </div>
+           
           </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; 著作権 2020, Odeilly
+
+    </p>
+  </div> 
+
+</footer>
+
         </div>
-        
-        
-      </div><!-- /row -->
+      </div>
 
-      <!-- row -->
-      <div class="row footer-relbar">
-<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
-  <div class="navbar-inner">
-    <ul class="nav navbar-nav ">
-        <li><a href="../../index.html">Odeilly&#39;s Note</a></li>
-    </ul>
-<ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
-      
-        <li><a href="../../genindex.html" title="総合索引" >索引</a></li>
-        <li><a href="#">top</a></li> 
-      
-    </ul>
+    </section>
+
   </div>
-</div>
-      </div><!-- /row -->
+  
 
-      <!-- footer -->
-      <footer role="contentinfo">
-          &copy; Copyright 2020, Odeilly.
-      </footer>
-      <!-- /footer -->
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
 
-    </div>
-    <!-- /container -->
+  
+  
+    
+   
 
-  </body>
+</body>
 </html>
