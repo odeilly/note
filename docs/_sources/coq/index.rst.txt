@@ -1,0 +1,8 @@
+=====
+ Coq
+=====
+
+.. toctree::
+
+   install
+   emacs
