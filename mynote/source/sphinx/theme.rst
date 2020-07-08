@@ -5,6 +5,47 @@
 Sphinxでは, 10個の組み込みテーマがあります.
 また, サードパーティ製のテーマを利用することもできます.
 
+.. Sphinx Foundation Theme を利用する
+   ==================================
+    
+   https://github.com/peterhudec/foundation-sphinx-theme
+    
+    
+   インストール
+   ------------
+    
+   コマンドプロンプトで, 下記を実行します.
+    
+   ::
+    
+      pip install foundation-sphinx-theme
+    
+    
+   適用
+   ----
+    
+   conf.py に, 以下を追加します.
+    
+   .. code-block:: python
+    
+      import foundation_sphinx_theme
+    
+      extensions = [
+    
+          ...
+    
+          'sphinx.ext.autodoc',
+          'foundation_sphinx_theme',
+    
+          ...
+          
+      ]
+    
+      html_theme = 'foundation_sphinx_theme'
+    
+      
+
+
 Sphinx Theme for Basicstrap を利用する
 ======================================
 

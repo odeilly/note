@@ -15,7 +15,7 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 #import sphinx_bootstrap_theme
-#import sphinx_rtd_theme
+import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -34,7 +34,8 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
     'sphinxcontrib.plantuml',
-    'sphinxjp.themes.basicstrap',
+#    'sphinxjp.themes.basicstrap',
+    'sphinx_rtd_theme',
 ]
 
 ## PlantUML
@@ -63,12 +64,14 @@ exclude_patterns = []
 #
 
 # Activate the theme.                                          
-html_theme = 'basicstrap'
-html_theme_options = {
-    'lang': 'ja',
-    'inner_theme': True,
-    'inner_theme_name': 'bootswatch-cerulean',
-}
+#html_theme = 'basicstrap'
+#html_theme_options = {
+#    'lang': 'ja',
+#    'inner_theme': True,
+#    'inner_theme_name': 'bootswatch-cerulean',
+#
+
+html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
