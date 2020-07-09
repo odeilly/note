@@ -10,3 +10,4 @@ https://www.sphinx-doc.org/ja/master/
    install
    theme
    plantuml
+   memo
