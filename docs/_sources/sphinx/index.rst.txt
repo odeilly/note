@@ -8,6 +8,7 @@ https://www.sphinx-doc.org/ja/master/
    :maxdepth: 2
 
    install
+   autobuild
    theme
    plantuml
    memo
