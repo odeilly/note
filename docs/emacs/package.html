@@ -248,6 +248,23 @@ Windowのサイズを変更することができます.
 </tr>
 </tbody>
 </table>
+<p>他のウィンドウ操作も設定しましょう.</p>
+<div class="highlight-elisp notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 1&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-maximize</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 2&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-split-below</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 3&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-split-right</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 0&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-delete</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 4 d&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-dired</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 4 f&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-find-file</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 4 m&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-compose-mail</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 4 r&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-find-file-read-only</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 4 C-f&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-find-file</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 4 C-o&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-display-buffer</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&quot;C-x 4 0&quot;</span><span class="p">)</span> <span class="ss">&#39;switch-window-then-kill-buffer</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
