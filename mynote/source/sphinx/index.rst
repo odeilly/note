@@ -10,5 +10,6 @@ https://www.sphinx-doc.org/ja/master/
    install
    autobuild
    theme
+   emacs
    plantuml
    memo
