@@ -92,6 +92,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">メモ</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">シンタックスハイライト</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id3">シンタックスハイライトの例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">ソースコードのインポート</a></li>
 </ul>
 </li>
 </ul>
@@ -169,6 +170,7 @@
 <h1>メモ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
 <h2>シンタックスハイライト<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://www.sphinx-doc.org/ja/master/usage/restructuredtext/directives.html#code-examples">https://www.sphinx-doc.org/ja/master/usage/restructuredtext/directives.html#code-examples</a></p>
 <p>ハイライトできる言語は, Pygmentsがサポートしている全ての言語です.
 以下のページに掲載されています.</p>
 <p><a class="reference external" href="https://pygments.org/docs/lexers/">https://pygments.org/docs/lexers/</a></p>
@@ -186,6 +188,24 @@
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Sample</span> <span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>ソースコードのインポート<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">literalinclude::</span> <span class="pre">filename</span></code> を使うと,
+外部のソースコードをインポートすることができます.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.. literalinclude:: Sample.java
+   :language: java
+</pre></div>
+</div>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Sample</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+        <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
