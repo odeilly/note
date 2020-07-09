@@ -7,4 +7,5 @@
 
    eclipse/index
    coq/index
+   emacs/index
    sphinx/index
