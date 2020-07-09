@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Autobuild &mdash; Odeilly&#39;s Note</title>
+  <title>Emacsでのrstファイル編集 &mdash; Odeilly&#39;s Note</title>
   
 
   
@@ -37,8 +37,8 @@
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="テーマ" href="theme.html" />
-    <link rel="prev" title="インストール" href="install.html" /> 
+    <link rel="next" title="PlantUMLを使う" href="plantuml.html" />
+    <link rel="prev" title="テーマ" href="theme.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,12 +88,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq/index.html">Coq</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Sphinx</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="install.html">インストール</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Autobuild</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">インストール</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">実行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autobuild.html">Autobuild</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html">テーマ</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Emacsでのrstファイル編集</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">参考</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="theme.html">テーマ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plantuml.html">PlantUMLを使う</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memo.html">メモ</a></li>
 </ul>
@@ -146,13 +146,13 @@
         
           <li><a href="index.html">Sphinx</a> &raquo;</li>
         
-      <li>Autobuild</li>
+      <li>Emacsでのrstファイル編集</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/sphinx/autobuild.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/sphinx/emacs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,25 +165,57 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="autobuild">
-<h1>Autobuild<a class="headerlink" href="#autobuild" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>文章の編集を行ない随時確認するために,
-autobuildを使用します.</p>
+  <div class="section" id="emacsrst">
+<h1>Emacsでのrstファイル編集<a class="headerlink" href="#emacsrst" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>Emacsでは, rstファイルを開くとrst-modeになります.
+rst-mode での主なキーバインドを以下にまとめます.</p>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">rst-mode の主なキーバインド</span><a class="headerlink" href="#id2" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>キー</p></th>
+<th class="head"><p>機能</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>C-=</p></td>
+<td><p>現在行をセクションにする.
+C-= を繰り返すと, セクションのレベルが切り替わる.</p></td>
+</tr>
+<tr class="row-odd"><td><p>C-c C-r &lt;tab&gt;</p></td>
+<td><p>リージョンを右へインデントする.</p></td>
+</tr>
+<tr class="row-even"><td><p>C-c C-a C-d</p></td>
+<td><p>セクションの一覧を表示する.</p></td>
+</tr>
+<tr class="row-odd"><td><p>C-c C-a C-s</p></td>
+<td><p>カレントバッファのセクションの文字列をデフォルトのもので振り直す.</p></td>
+</tr>
+<tr class="row-even"><td><p>C-M-e</p></td>
+<td><p>次のセクションへジャンプする.</p></td>
+</tr>
+<tr class="row-odd"><td><p>C-M-a</p></td>
+<td><p>前のセクションへジャンプする.</p></td>
+</tr>
+<tr class="row-even"><td><p>C-c C-l C-b</p></td>
+<td><p>リージョンを番号なしリストにする.</p></td>
+</tr>
+<tr class="row-odd"><td><p>C-c C-l C-e</p></td>
+<td><p>リージョンを番号付きリストにする.</p></td>
+</tr>
+<tr class="row-even"><td><p>C-c C-l C-c</p></td>
+<td><p>リージョンを番号なしリストから番号付きリストにする.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="id1">
-<h2>インストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>以下のコマンドを実行します.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install sphinx-autobuild
-</pre></div>
-</div>
-</div>
-<div class="section" id="id2">
-<h2>実行<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>以下のコマンドを実行します.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sphinx-autobuild -b ソースフォルダ  出力先フォルダ
-</pre></div>
-</div>
-<p>ブラウザで, <a class="reference external" href="http://localhost:8000">http://localhost:8000</a> で開くことができます.
-<code class="docutils literal notranslate"><span class="pre">-p</span></code> オプションでポートを指定することができます.</p>
+<h2>参考<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docutils.sourceforge.io/docs/user/emacs.html">https://docutils.sourceforge.io/docs/user/emacs.html</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -195,10 +227,10 @@ autobuildを使用します.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="theme.html" class="btn btn-neutral float-right" title="テーマ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="plantuml.html" class="btn btn-neutral float-right" title="PlantUMLを使う" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="install.html" class="btn btn-neutral float-left" title="インストール" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="theme.html" class="btn btn-neutral float-left" title="テーマ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
