@@ -21,3 +21,6 @@ help:
 
 html: Makefile
 	@$(SPHINXBUILD) -b html "$(SOURCEDIR)" "../docs" $(SPHINXOPTS) $(O)
+
+html-all: Makefile
+	@$(SPHINXBUILD) -a -b html "$(SOURCEDIR)" "../docs" $(SPHINXOPTS) $(O)
