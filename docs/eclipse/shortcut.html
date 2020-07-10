@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Eclipse &mdash; Odeilly&#39;s Note</title>
+  <title>キーボードショートカット &mdash; Odeilly&#39;s Note</title>
   
 
   
@@ -37,8 +37,8 @@
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="Plugin" href="plugin.html" />
-    <link rel="prev" title="Odeilly&#39;s Note" href="../index.html" /> 
+    <link rel="next" title="Coq" href="../coq/index.html" />
+    <link rel="prev" title="Plugin" href="plugin.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,9 +84,15 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Eclipse</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Eclipse</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="plugin.html">Plugin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="shortcut.html">キーボードショートカット</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">キーボードショートカット</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#egit">EGit</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">EGitのキーボードショートカットを有効にする</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../coq/index.html">Coq</a></li>
@@ -138,13 +144,15 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Eclipse</li>
+          <li><a href="index.html">Eclipse</a> &raquo;</li>
+        
+      <li>キーボードショートカット</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/eclipse/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/eclipse/shortcut.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,20 +165,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="eclipse">
-<h1>Eclipse<a class="headerlink" href="#eclipse" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="plugin.html">Plugin</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="plugin.html#plantuml">PlantUMLプラグイン</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plugin.html#amaterasuml">AmaterasUML</a></li>
-</ul>
+  <div class="section" id="id1">
+<h1>キーボードショートカット<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="egit">
+<h2>EGit<a class="headerlink" href="#egit" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id2">
+<h3>EGitのキーボードショートカットを有効にする<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Eclipseの初期設定では, EGitのキーボードショートカットは無効となっており, 不便です.
+パースペクティブの設定で有効にします.
+有効にすると, C-# でコミットすることができます.</p>
+<ol class="arabic">
+<li><p>メニューから「Window」→「Perspective」→「Customize Perspective」を開きます.</p>
+<div class="figure align-default">
+<img alt="../_images/select_perspective_customize.png" src="../_images/select_perspective_customize.png" />
+</div>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="shortcut.html">キーボードショートカット</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="shortcut.html#egit">EGit</a></li>
-</ul>
+<li><p>「Shortcuts」タブを選択します.</p>
+<div class="figure align-default">
+<img alt="../_images/perspective_customize.png" src="../_images/perspective_customize.png" />
+</div>
 </li>
-</ul>
+<li><p>「Shortcut Categories」の「Git」にチェックを入れ, 「Apply and Close」をクリックします.</p>
+<div class="figure align-default">
+<img alt="../_images/customize_git.png" src="../_images/customize_git.png" />
+</div>
+</li>
+</ol>
+</div>
 </div>
 </div>
 
@@ -182,10 +203,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="plugin.html" class="btn btn-neutral float-right" title="Plugin" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../coq/index.html" class="btn btn-neutral float-right" title="Coq" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="Odeilly&#39;s Note" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="plugin.html" class="btn btn-neutral float-left" title="Plugin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
