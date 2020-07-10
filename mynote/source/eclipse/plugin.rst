@@ -42,8 +42,8 @@ GEFのインストール
 #. 以下の値を入力し, 「Add」ボタンをクリックします.
 
    .. list-table::
-      
-      * - Name
+
+   * - Name
         - (任意)
       * - Location
         - http://download.eclipse.org/releases/oxygen
@@ -56,3 +56,16 @@ GEFのインストール
    .. figure:: images/select_gef.png
 
 #. そのままインストールを続行します.
+
+AmaterasUMLのインストール
+~~~~~~~~~~~~~~~~~~~~~~~~~
+#. `AmaterasUML <http://amateras.osdn.jp/cgi-bin/fswiki/wiki.cgi?page=AmaterasUML>`__
+   から, AmaterasUML_1.3.4.zip をダウンロードします.
+
+   .. figure:: images/amateras_download.png
+
+#. ダウンロードしたZIPファイルを展開し,
+   中のjarファイルを全て,
+   Eclipseがインストールフォルダのdropinsフォルダに配置します.
+
+#. Eclipseを再起動します.
