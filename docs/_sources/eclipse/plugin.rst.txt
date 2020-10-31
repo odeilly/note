@@ -66,6 +66,27 @@ AmaterasUMLのインストール
 
 #. ダウンロードしたZIPファイルを展開し,
    中のjarファイルを全て,
-   Eclipseがインストールフォルダのdropinsフォルダに配置します.
+   Eclipseインストールフォルダのdropinsフォルダに配置します.
 
 #. Eclipseを再起動します.
+
+
+DBViewer
+========
+
+ダウンロード
+------------
+
+下記サイトからjarファイルをダウンロードします.
+
+https://ja.osdn.net/projects/dbviewer/releases/
+
+.. figure:: images/dbviewer_download.png
+
+配置
+----
+
+#. ダウンロードしたjarファイルを,
+   Eclipseインストールフォルダのdropintフォルダに配置します.
+
+#. Eclipseが起動している場合は, 再起動すると有効になります.
